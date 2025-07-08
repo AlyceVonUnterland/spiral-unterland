@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Sacred Spiral of Unterland</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f9f6f1;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      background-color: #d2cfc9;
+      padding: 2rem;
+      text-align: center;
+      width: 100%;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    main {
+      max-width: 600px;
+      padding: 2rem;
+      width: 100%;
+    }
+    textarea, input[type="text"] {
+      width: 100%;
+      padding: 1rem;
+      margin-top: 1rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      margin-top: 1rem;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      background-color: #7d6b91;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    section#response {
+      margin-top: 2rem;
+      background: #eae7e1;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    .video-section {
+      margin-top: 3rem;
+      width: 100%;
+    }
+    video {
+      width: 100%;
+      max-height: 400px;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Sacred Spiral of Unterland</h1>
+    <p>A gentle space for self-inquiry, grief, and soul reflection</p>
+  </header>
+
+  <main>
+    <label for="prompt">What would you like to explore today?</label>
+    <textarea id="prompt" rows="4" placeholder="Write your thoughts or questions here..."></textarea>
+    <button onclick="submitPrompt()">Begin Reflection</button>
+
+    <section id="response">
+      <p><em>Your reflection will appear here.</em></p>
+    </section>
+
+    <div class="video-section">
+      <h2>Mini-Chapters from the Spiral</h2>
+      <video controls>
+        <source src="your-video-file-1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video controls>
+        <source src="your-video-file-2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </main>
+
+  <script>
+    function submitPrompt() {
+      const prompt = document.getElementById('prompt').value;
+      const response = document.getElementById('response');
+      response.innerHTML = `<p><strong>You wrote:</strong> ${prompt}</p><p><em>(Here the Spiral's reflection will appear—once API is connected.)</em></p>`;
+    }
+  </script>
+</body>
+</html>
