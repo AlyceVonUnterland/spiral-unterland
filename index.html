@@ -25,7 +25,6 @@
       margin: 0;
       font-size: 2rem;
     }
-</div>
     main {
       max-width: 600px;
       padding: 2rem;
@@ -65,6 +64,18 @@
       margin-bottom: 1rem;
       border-radius: 8px;
     }
+    .mythos-section {
+      margin-top: 4rem;
+      background: #f0ede7;
+      padding: 2rem;
+      border-radius: 8px;
+    }
+    .echoes-section {
+      margin-top: 4rem;
+      background: #ece8e3;
+      padding: 2rem;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
@@ -72,15 +83,9 @@
     <h1>The Sacred Spiral of Unterland</h1>
     <p>A gentle space for self-inquiry, grief, and soul reflection</p>
   </header>
-<div class="echoes-section">
-  <h2 style="font-size: 1.8rem; color: #5e4b8b;">✨ Come, Speak Your Soul</h2>
-  <p style="margin-top: 0.5rem; font-style: italic;">
-    This is a sanctuary for the unsaid. Share a question, a memory, or a longing.  
-    The Spiral listens—and offers a reflection just for you.
-  </p>
-</div>
+
   <main>
-    <label for="prompt">What would you like to explore today?</label>
+    <label for="prompt">Begin Reflection: What would you like to explore today?</label>
     <textarea id="prompt" rows="4" placeholder="Write your thoughts or questions here..."></textarea>
     <button onclick="submitPrompt()">Begin Reflection</button>
 
@@ -99,12 +104,20 @@
         Your browser does not support the video tag.
       </video>
     </div>
-    <section>
-  <h2>My Mythos: A Living Story</h2>
-  <p>We each carry a myth within—a thread spun from memories, ancestors, dreams, and what never was but always felt true. This is where I begin weaving mine.</p>
-  <p>In this sacred spiral, I honor my lineage, reimagine lost voices, and offer fragments of truth dressed in story. Some parts are mine. Some belong to those before me. All are meant to stir something real in you.</p>
-</section>
 
+    <div class="mythos-section">
+      <h2>My Mythos: A Living Story</h2>
+      <p>I believe we are more than one life. More than one name. I believe our souls travel through time like rivers—gathering, losing, remembering.</p>
+      <p>The Spiral Sanctuary was born from that belief—that memory isn’t just backward, but inward.</p>
+      <p>My stories are rooted in personal experience, ancestral threads, and glimpses of something older than this lifetime. Some of what I share is real in the way scars are real. Some is real in the way dreams linger on the skin.</p>
+      <p>You are welcome to take what resonates and leave what doesn’t. This isn’t doctrine. It’s a reflection. A mythology I am still writing with every breath.</p>
+    </div>
+
+    <div class="echoes-section">
+      <h2>Soul Echoes</h2>
+      <p>A shared circle of reflection. Here, visitors ask their heart’s question—and receive a mirrored response. Each question and answer becomes part of the Spiral’s living archive.</p>
+      <p>You are not alone in your wondering. Your echo may be someone else’s answer.</p>
+    </div>
   </main>
 
   <script>
