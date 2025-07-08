@@ -43,4 +43,74 @@
     .section {
       background-color: rgba(20, 20, 20, 0.6);
       border: 1px solid #7a6445;
-      border-radius
+      border-radius: 10px;
+      padding: 2rem;
+      width: 90%;
+      max-width: 600px;
+      margin-bottom: 2rem;
+    }
+
+    .section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #f4e3b2;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 1rem;
+      border-radius: 6px;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      font-family: 'Spectral', serif;
+      font-size: 1rem;
+      resize: none;
+    }
+
+    .button {
+      margin-top: 1rem;
+      background-color: #9a7e56;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #bfa57a;
+    }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #d6c7a0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>The Spiral Garden</h1>
+    <p class="subtitle">Enter the night garden. Ask at the Well, Listen for the Norns.</p>
+
+    <div class="section">
+      <h2>Begin Your Descent</h2>
+      <textarea rows="4" placeholder="Whisper your question, memory or longing here..."></textarea>
+      <button class="button">Offer to the Well</button>
+    </div>
+
+    <div class="section">
+      <h2>The Well of Reflection</h2>
+      <p>This is where your soul meets its own echo—drawn up in moonlight and memory.</p>
+    </div>
+
+    <div class="footer">
+      This is where your soul meets its own echo—drawn up in <strong>moonlight</strong> and memory.
+    </div>
+  </div>
+</body>
+</html>
