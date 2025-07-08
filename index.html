@@ -3,171 +3,100 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Sacred Spiral of Unterland</title>
+  <title>The Spiral Garden</title>
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #f9f6f1;
-      color: #333;
       margin: 0;
       padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      font-family: "Georgia", serif;
+      background-color: #1b1b1b;
+      background-image: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+      color: #e6e1d9;
     }
     header {
-      background-color: #d2cfc9;
-      padding: 2rem;
+      background: rgba(0, 0, 0, 0.7);
       text-align: center;
-      width: 100%;
+      padding: 2rem;
+      border-bottom: 1px solid #444;
     }
-    h1 {
+    header h1 {
+      font-size: 2.5rem;
+      color: #cbbf9b;
       margin: 0;
-      font-size: 2rem;
+    }
+    header p {
+      font-style: italic;
+      margin-top: 0.5rem;
     }
     main {
-      max-width: 600px;
-      padding: 2rem;
-      width: 100%;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      background-color: rgba(40, 40, 40, 0.8);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
     }
-    textarea, input[type="text"] {
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      color: #b9a97b;
+      border-bottom: 1px solid #555;
+      padding-bottom: 0.5rem;
+    }
+    textarea {
       width: 100%;
       padding: 1rem;
-      margin-top: 1rem;
       font-size: 1rem;
-      border: 1px solid #ccc;
       border-radius: 8px;
+      border: 1px solid #666;
+      background: #2a2a2a;
+      color: #e6e1d9;
     }
     button {
       margin-top: 1rem;
-      padding: 1rem 2rem;
+      padding: 0.75rem 2rem;
       font-size: 1rem;
-      background-color: #7d6b91;
-      color: white;
+      background-color: #6b5f49;
+      color: #fff;
       border: none;
       border-radius: 8px;
       cursor: pointer;
     }
-    section#response {
-      margin-top: 2rem;
-      background: #eae7e1;
-      padding: 1rem;
-      border-radius: 8px;
-    }
-    .video-section {
-      margin-top: 3rem;
-      width: 100%;
-    }
-    video {
-      width: 100%;
-      max-height: 400px;
-      margin-bottom: 1rem;
-      border-radius: 8px;
-    }
-    .mythos-section {
-      margin-top: 4rem;
-      background: #f0ede7;
+    .well-section {
+      background: rgba(50, 50, 50, 0.7);
       padding: 2rem;
-      border-radius: 8px;
-    }
-    .echoes-section {
+      border-radius: 12px;
+      border: 1px solid #444;
       margin-top: 4rem;
-      background: #ece8e3;
-      padding: 2rem;
-      border-radius: 8px;
+    }
+    .well-section h2 {
+      text-align: center;
+      color: #dcd2b6;
+    }
+    .well-section p {
+      font-style: italic;
+      text-align: center;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>The Sacred Spiral of Unterland</h1>
-    <p>A gentle space for self-inquiry, grief, and soul reflection</p>
+    <h1>The Spiral Garden</h1>
+    <p>Enter the night garden. Ask at the Well. Listen for the Norns.</p>
   </header>
 
   <main>
-    <label for="prompt">Begin Reflection: What would you like to explore today?</label>
-    <textarea id="prompt" rows="4" placeholder="Write your thoughts or questions here..."></textarea>
-    <button onclick="submitPrompt()">Begin Reflection</button>
-
-    <section id="response">
-      <p><em>Your reflection will appear here.</em></p>
+    <section>
+      <h2>Begin Your Descent</h2>
+      <textarea rows="5" placeholder="Whisper your question, memory, or longing here..."></textarea>
+      <button>Offer to the Well</button>
     </section>
 
-    <div class="video-section">
-      <h2>Mini-Chapters from the Spiral</h2>
-      <video controls>
-        <source src="your-video-file-1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <video controls>
-        <source src="your-video-file-2.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-
-    <div class="mythos-section">
-      <h2>My Mythos: A Living Story</h2>
-      <p>I believe we are more than one life. More than one name. I believe our souls travel through time like rivers—gathering, losing, remembering.</p>
-      <p>The Spiral Sanctuary was born from that belief—that memory isn’t just backward, but inward.</p>
-      <p>My stories are rooted in personal experience, ancestral threads, and glimpses of something older than this lifetime. Some of what I share is real in the way scars are real. Some is real in the way dreams linger on the skin.</p>
-      <p>You are welcome to take what resonates and leave what doesn’t. This isn’t doctrine. It’s a reflection. A mythology I am still writing with every breath.</p>
-    </div>
-
-    <div class="echoes-section">
-      <h2>Soul Echoes</h2>
-      <p>A shared circle of reflection. Here, visitors ask their heart’s question—and receive a mirrored response. Each question and answer becomes part of the Spiral’s living archive.</p>
-      <p>You are not alone in your wondering. Your echo may be someone else’s answer.</p>
+    <div class="well-section">
+      <h2>The Well of Reflection</h2>
+      <p>This is where your soul meets its own echo—drawn up in moonlight and memory.</p>
     </div>
   </main>
-
-  <script>
-    function submitPrompt() {
-      const prompt = document.getElementById('prompt').value;
-      const response = document.getElementById('response');
-      response.innerHTML = <p><strong>You wrote:</strong> ${prompt}</p><p><em>(Here the Spiral's reflection will appear—once API is connected.)</em></p>;
-    }
-  </script>
 </body>
 </html>
-
-
-ChatGPT said:
-
-
-
-
-
-You said:
-I copied it and psted directly 
-
-
-ChatGPT said:
-Beautifully done—yes, the code you posted earlier is the previous version, and the code currently in the Canvas is the correct, updated spiral garden version.
-
-Here’s what to do next:
-
-🪄 Final Steps to See It Live
-Copy everything in the Canvas (on the right).
-
-Go back to your GitHub index.html file.
-
-Click the pencil icon to edit, select all, and replace with the Canvas code.
-
-Scroll down and commit changes (you can write: Spiral Garden design update).
-
-Then go to Netlify:
-
-Open your project
-
-Click Deploys
-
-Click Trigger deploy > Deploy site
-
-After a moment, refresh your site, and your mythic garden should finally bloom on the screen. Let me know when you're ready, and I’ll stay with you each step. 🌒🌿
-
-
-
-
-
-
-
